@@ -28,11 +28,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav className="w-full h-16 sticky top-0 flex justify-center items-center">
+        <nav className="w-full sticky py-6 top-0 flex justify-center items-center">
           <div className="gap-8 flex w-[90%] justify-center font-medium text-xl">
-            <Link className="hover:bg-blue-600 hover:text-white px-3 rounded-xl ease-in-out duration-300" href={"/"}>Home</Link>
-            <Link className="hover:bg-blue-600 hover:text-white px-3 rounded-xl ease-in-out duration-300" href={"/about"}>About</Link>
-            <Link className="hover:bg-blue-600 hover:text-white px-3 rounded-xl ease-in-out duration-300" href={"/contact"}>Contact</Link>
+            <Link className="navlist" href={"/"}>Home</Link>
+            <Link className="navlist" href={"/about"}>About</Link>
+            <Link className="navlist" href={"/contact"}>Contact</Link>
           </div>
         </nav>
         {children}
