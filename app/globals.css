@@ -19,14 +19,46 @@
     --foreground: #ededed;
   }
 }
+/* Globals */
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   height: 100dvh;
+  width: 100dvw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  @apply font-sans px-[5%]
+}
+
+h1 {
+  @apply text-[4em] font-bold
+}
+
+/* Navbar */
+.navbarComponents {
+  @apply w-full sticky py-4 top-0 flex justify-between items-center px-10 z-100 bg-white shadow-xl rounded-b-xl;
 }
 
 .navlist {
- @apply hover:underline underline-offset-1 px-3 rounded-xl ease-in-out duration-300;
+ @apply hover:underline hover:text-blue-500 underline-offset-1 px-3 rounded-xl ease-in-out duration-100;
+}
+/* Hero Section About */
+
+.heroComponents {
+  @apply w-full h-[100dvh] flex items-center justify-start
+}
+
+.heroContainer {
+  @apply w-full h-[100dvh] columns-2 py-10
+}
+
+.hContainer {
+  @apply w-full h-full flex flex-col justify-start items-center
+}
+
+/* Second Section About */
+.secondComponents {
+  @apply w-full h-[100dvh] bg-black dark:invert
 }
